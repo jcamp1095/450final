@@ -1,0 +1,163 @@
+.Rrace {
+  color: #8d5524;
+}
+
+.arace {
+  color: #c68642;
+}
+
+.crace {
+  color: #e0ac69;
+}
+
+.erace {
+  color: #f1c27d;
+}
+
+body {
+  font-family: "Computer Modern Sans", sans-serif;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+  fill-opacity: .9;
+}
+
+.x.axis path {
+  display: none;
+}
+
+label {
+  position: relative;
+}
+
+#svganim {
+  position: absolute;
+  width: 960px;
+}
+
+#teachersvg {
+      position: relative;
+      width: 100%;
+      color: black;
+}
+
+#buttontch {
+  position:absolute;
+  bottom:0px;
+  right:0px;
+}
+
+.viewcontainer {
+    height: 200px;
+    width: 500px;
+    border:2px solid #000;
+    overflow: scroll;
+    position: absolute;
+    right: 600px;
+}
+
+.summary {
+  overflow-y: scroll;
+  height: 40%;
+}
+
+.simdiff {
+  position: relative;
+  overflow-y: scroll;
+  background: #e6e1f9;
+  z-index: 1;
+}
+
+.teacherdiff {
+  position: relative;
+  overflow-y: scroll;
+  background:  rgb(128,128,128, .2);
+  z-index: 1;
+}
+
+.imagelink {
+  width: 60%;
+  z-index: 700;
+  position: relative;
+  margin-top:8%;
+}
+
+#impacttext {
+  color: #c3c5c4;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+}
+
+#subtitletext {
+  color: #ffffff;
+}
+
+#dim {
+    background:rgba(0, 0, 0, 0.5);
+    display:none;
+    height:100%;
+    left:0;
+    position:relative;
+    top:0;
+    width:100%;
+    z-index:1000;
+}
+
+.circle-container {
+    position: relative;
+    width: 24em;
+    height: 24em;
+    padding: 4.2em; /* 1.4 * .5 * width */
+    border: dashed 1px;
+    border-radius: 50%;
+    margin: 1.75em auto 0;
+}
+.circle-container a {
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 6em; height: 6em;
+    margin: -3em; /* .5 width */
+}
+.circle-container img { display: block; width: 100%; }
+.deg0 { transform: translate(16em); } /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(45deg) translate(16em) rotate(-45deg); }
+.deg90 { transform: rotate(90deg) translate(16em) rotate(-90deg); }
+.deg135 { transform: rotate(135deg) translate(16em) rotate(-135deg); }
+.deg180 { transform: translate(-16em); }
+.deg225 { transform: rotate(225deg) translate(16em) rotate(-225deg); }
+.deg270 { transform: rotate(270deg) translate(16em) rotate(-270deg); }
+.deg315 { transform: rotate(315deg) translate(16em) rotate(-315deg); }
+
+.homeimage {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
+}
+
+.homeimage:hover {
+    background-color: #383838;
+    
+    box-shadow: 0px 0px 50px 5px #ffffff;  
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+}
+
+
