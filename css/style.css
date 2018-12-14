@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Optima', sans-serif;
   font-size: 12pt;
 }
 
@@ -215,6 +215,14 @@ p {
 
 .left {
   text-align: left;
+}
+
+.under {
+  text-decoration: underline;
+}
+
+.times {
+  font-family: "Times", "Times New Roman", serif;
 }
 
 
