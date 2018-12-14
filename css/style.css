@@ -15,7 +15,8 @@
 }
 
 body {
-  font-family: "Computer Modern Sans", sans-serif;
+  font-family: 'Courier New', monospace;
+  font-size: 12pt;
 }
 
 .axis text {
@@ -70,7 +71,9 @@ label {
 
 .summary {
   overflow-y: scroll;
-  height: 40%;
+  color: #EDF5E1;
+  height: 350px;
+
 }
 
 .simdiff {
@@ -97,7 +100,7 @@ label {
 #impacttext {
   color: #c3c5c4;
   position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); }
@@ -135,14 +138,13 @@ label {
     margin: -3em; /* .5 width */
 }
 .circle-container img { display: block; width: 100%; }
-.deg0 { transform: translate(16em); } /* 12em = half the width of the wrapper */
-.deg45 { transform: rotate(45deg) translate(16em) rotate(-45deg); }
-.deg90 { transform: rotate(90deg) translate(16em) rotate(-90deg); }
-.deg135 { transform: rotate(135deg) translate(16em) rotate(-135deg); }
-.deg180 { transform: translate(-16em); }
-.deg225 { transform: rotate(225deg) translate(16em) rotate(-225deg); }
+.deg0 { transform: rotate(12.86deg) translate(16em) rotate(-12.86deg); } /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(64.29deg) translate(16em) rotate(-64.29deg); }
+.deg90 { transform: rotate(115.72deg) translate(16em) rotate(-115.72deg); }
+.deg180 { transform: rotate(167.15deg) translate(16em) rotate(-167.15deg); }
+.deg225 { transform: rotate(218.57deg) translate(16em) rotate(-218.57deg); }
 .deg270 { transform: rotate(270deg) translate(16em) rotate(-270deg); }
-.deg315 { transform: rotate(315deg) translate(16em) rotate(-315deg); }
+.deg315 { transform: rotate(321.43deg) translate(16em) rotate(-321.43deg); }
 
 .homeimage {
     display: inline;
@@ -158,6 +160,56 @@ label {
     box-shadow: 0px 0px 50px 5px #ffffff;  
     /* in order: x offset, y offset, blur size, spread size, color */
     /* blur size and spread size are optional (they default to 0) */
+      animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
+
+.btnleft {
+  position: absolute; left: 20px;
+}
+
+.btnright {
+  position: absolute; right: 20px;
+
+}
+
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+p {
+  text-align: left;
+}
+
+.cursive {
+  font-family: "Papyrus",fantasy;
+}
+
+.sig {
+  font-family: "Dancing Script";
+}
+
+.left {
+  text-align: left;
+}
+
 
 

@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Courier New', monospace;
 }
 
 hr {
@@ -35,11 +35,22 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Computer Modern Sans", sans-serif;
+  font-family:'Courier New', monospace;
 }
 
 .bg-primary {
-  background-color: #d6d8d7!important;
+  background-color: #379683!important;
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-primary1 {
+  background-color: #7395AE!important;
   background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -50,7 +61,7 @@ h6 {
 }
 
 .bg-primary2 {
-  background-color: #c3c5c4!important;
+  background-color: #557A95!important;
   background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -61,7 +72,7 @@ h6 {
 }
 
 .bg-primary3 {
-  background-color: #5697ad!important;
+  background-color: #B1A296!important;
   background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -72,7 +83,7 @@ h6 {
 }
 
 .bg-primary4 {
-  background-color: #b2b2b2!important;
+  background-color:  #5D5C61!important;
   background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -83,7 +94,7 @@ h6 {
 }
 
 .bg-primary5 {
-  background-color:  #d6d8d7!important;
+  background-color:  #379683!important;
   background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -94,7 +105,7 @@ h6 {
 }
 
 .bg-primary6 {
-  background-color:  #c3c5c4!important;
+  background-color:  #7395AE!important;
   background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -105,7 +116,7 @@ h6 {
 }
 
 .bg-primary7 {
-  background-color:  #5697ad!important;
+  background-color:  #557A95!important;
   background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -116,7 +127,7 @@ h6 {
 }
 
 .bg-primary8 {
-  background-color:  #c3c5c4!important;
+  background-color:  #B1A296!important;
   background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -126,8 +137,8 @@ h6 {
     height: 100%;
 }
 
-.bg-primary_end {
-  background-color:  #281942!important;
+.bg-primary9 {
+  background-color:  #5D5C61!important;
   background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -136,6 +147,8 @@ h6 {
     width: 100%;
     height: 100%;
 }
+
+
 
 .bg-dark {
   background-color:  #212529!important;
@@ -185,7 +198,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  font-weight: 700;
+  font-weight: 100;
   text-transform: uppercase;
   color: #cccccc;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -198,7 +211,7 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   font-size: .9rem;
-  font-weight: 700;
+  font-weight: 100;
   text-transform: uppercase;
   color: #212529;
 }
@@ -264,7 +277,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-color: #281942!important;
+  background-color: #5D5C61!important;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -282,7 +295,7 @@ header.masthead h1 {
 }
 
 header.masthead p {
-  font-weight: 300;
+  font-weight: 100;
 }
 
 @media (min-width: 768px) {
@@ -351,7 +364,7 @@ header.masthead p {
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 100;
   text-transform: uppercase;
 }
 
@@ -381,7 +394,7 @@ header.masthead p {
 }
 
 .btn {
-  font-weight: 700;
+  font-weight: 100;
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
@@ -404,4 +417,8 @@ header.masthead p {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(182, 197, 223, 0.5) !important;
+}
+
+.btnright {
+  float: right;
 }
